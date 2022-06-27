@@ -1,11 +1,15 @@
 <script setup>
-
+import NavItem from "./NavItem.vue"
+import BurgerMenu from "./BurgerMenu.vue"
 </script>
 
 <template>
     <nav class=" bg-gray-800 text-white flex flex-row text-xl">
-        <RouterLink to="/" class=" hover:text-black hover:bg-gray-300 p-2">Home</RouterLink>
-        <RouterLink to="/about" class=" hover:text-black hover:bg-gray-300 p-2">About</RouterLink>
+        <nav-item text="Home" route="/"></nav-item>
+        <nav-item text="About" route="/about"></nav-item>
+        
+        <burger-menu class=" ml-auto"></burger-menu>
+        
     </nav>
 </template>
 
