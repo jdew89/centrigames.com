@@ -1,11 +1,16 @@
 <script setup>
 import {ref} from 'vue';
 
+const emit = defineEmits(['toggled'])
 const menuActive = ref(false);
 
 function ToggleMenu() {
     menuActive.value = !menuActive.value;
+    
+    emit('toggled');
 }
+
+
 </script>
 
 <template>
@@ -31,3 +36,4 @@ function ToggleMenu() {
     @apply -rotate-45 -translate-y-2.5;
 }
 </style>
+
