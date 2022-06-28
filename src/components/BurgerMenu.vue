@@ -23,7 +23,7 @@ function ToggleMenu() {
 
 <style scoped>
 .bar {
-    @apply w-9 h-1 bg-white my-1.5 transition-all duration-150 ease-in rounded-lg;
+    @apply w-9 h-1 bg-brand-white my-1.5 transition-all duration-150 ease-in rounded-lg;
 }
 
 .bar1-active {
