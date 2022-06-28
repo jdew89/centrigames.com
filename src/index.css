@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Excalibur Nouveau Med";
+    src: url("./assets/ExcaliburNouveau.ttf");
+}
+
+body {
+    @apply font-excalibur;
+}
+
 .router-link-active {
     @apply text-white bg-secondary;
 }

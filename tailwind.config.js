@@ -5,8 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#202225',
-        secondary: '#5865f2'
+        primary: '#0d9bbf',
+        secondary: '#ffb01f',
+        'brand-white': '#fffeeb'
+      },
+      fontFamily: {
+        'excalibur': ['Excalibur Nouveau Med', 'sans-serif']
       }
     },
   },
