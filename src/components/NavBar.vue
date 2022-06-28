@@ -27,15 +27,20 @@ function ToggleMenu() {
 </script>
 
 <template>
-    <nav class=" bg-primary text-brand-white flex flex-row text-xl h-11">
-        <a class=" text-2xl mr-2 h-11 flex flex-row justify-center items-center" href="/">
-            <img src="../assets/Centri Games_Final Logo_White-01.png" alt="Centri Games Logo" class="h-11">
-            Centri Games
-        </a>
-        <nav-item v-for="item in navItems" :text="item.text" :route="item.route" class=" hidden lg:block"></nav-item>
-        <div class=" ml-auto my-auto lg:hidden">
-            <burger-menu class="" @toggled="ToggleMenu" ></burger-menu>
-            <side-panel :class="openMenuCSSClasses" :nav-items="navItems" ></side-panel>
+    <nav class=" bg-primary text-brand-white text-xl h-11 w-screen px-2">
+        <div class="lg:container flex flex-row lg:mx-auto">
+            <a class=" text-2xl mr-2 h-11 flex flex-row justify-center items-center" href="/">
+                <img src="../assets/Centri Games_Final Logo_White-01.png" alt="Centri Games Logo" class="h-11">
+                Centri Games
+            </a>
+
+            <nav-item v-for="item in navItems" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
+    
+            <div class=" ml-auto my-auto md:hidden">
+                <burger-menu class="" @toggled="ToggleMenu" ></burger-menu>
+                <side-panel :class="openMenuCSSClasses" :nav-items="navItems" ></side-panel>
+            </div>
+
         </div>
     </nav>
 </template>
