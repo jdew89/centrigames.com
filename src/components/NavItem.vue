@@ -12,7 +12,5 @@ const props = defineProps({
 </template>
 
 <style>
-.router-link-active {
-    @apply text-white bg-primary;
-}
+
 </style>
