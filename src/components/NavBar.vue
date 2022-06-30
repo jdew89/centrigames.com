@@ -30,8 +30,8 @@ function ToggleMenu() {
     <nav class=" bg-primary text-brand-white text-xl h-11 w-screen px-2">
         <div class="lg:container flex flex-row lg:mx-auto">
             <a class=" text-2xl mr-2 h-11 flex flex-row justify-center items-center" href="/">
-                <img src="../assets/Centri Games_Final Logo_White-01.png" alt="Centri Games Logo" class="h-11">
-                Centri Games
+                <img src="../assets/CentriGames_Final Logo_White-01.png" alt="Centri Games Logo" class="h-11">
+                CENTRI GAMES
             </a>
 
             <nav-item v-for="item in navItems" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
