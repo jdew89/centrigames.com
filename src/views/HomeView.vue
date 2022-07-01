@@ -19,7 +19,7 @@
 
       </div>
     </section>
-    <section class="container mx-auto my-2">
+    <section class="container mx-auto my-2 font-sans">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vitae accusamus sint fugit deserunt obcaecati ipsa nesciunt quas beatae quo, totam quasi officia minima, dignissimos doloremque nobis neque eius fuga.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad debitis soluta aut iste nobis? Quasi, voluptatibus tenetur nemo veniam numquam velit quae cumque minima maiores sint rem fugit tempora atque.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis eius quis in nobis ipsa eveniet delectus nisi enim, adipisci quia doloribus veritatis maiores, fugiat sapiente deserunt totam? Eum, itaque!</p>
