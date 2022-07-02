@@ -28,7 +28,7 @@
                     <a class="underline" href="#">Kickstarter Campaign</a>
                 </div>
                 <div class=" text-center box-border flex mt-2 py-2">
-                    Subscribe to our news letter
+                    Subscribe to our newsletter
                 </div>
             </div>
         </div>
