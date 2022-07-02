@@ -34,7 +34,7 @@ function ToggleMenu() {
                 CENTRI GAMES
             </a>
 
-            <nav-item v-for="item in navItems" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
+            <nav-item v-for="item in navItems" :key="item" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
     
             <div class=" ml-auto my-auto md:hidden">
                 <burger-menu class="" @toggled="ToggleMenu" ></burger-menu>
