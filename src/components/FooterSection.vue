@@ -6,6 +6,15 @@
     <footer class=" bg-primary text-brand-white font-sans bg-primary-dark p-2 px-4 mt-2">
         <div class="container mx-auto">
             <div class="grid grid-flow-row md:grid-flow-col gap-6 lg:grid-cols-3 lg:w-10/12 xl:w-8/12 lg:mx-auto">
+                <div class=" text-left box-border mt-2 py-2">
+                    <label for="emailsubscribe" class="text-lg font-bold">Subscribe to our newsletter</label>
+                    <div class="relative">
+                        <input id="emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none">
+                        <div class="absolute top-1 right-1">
+                            <button @submit.prevent="" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="grid grid-flow-row gap-2">
                     <h3 class=" text-lg font-bold">Follow us on social media</h3>
                     <a class="flex flex-row gap-2" href="https://www.instagram.com/centrigames/" target="_blank" >
@@ -27,12 +36,10 @@
                     <a class="underline" href="/about">About</a>
                     <a class="underline" href="#">Kickstarter Campaign</a>
                 </div>
-                <div class=" text-center box-border flex mt-2 py-2">
-                    Subscribe to our newsletter
-                </div>
+                
             </div>
         </div>
-        <div class=" text-center box-border border-t-2 flex items-center justify-center mt-2 py-2 text-xs border-y-gray-600">
+        <div class=" text-center box-border border-t-2 flex items-center justify-center mt-6 py-2 text-xs border-y-gray-600">
             Copyright &#169; Centri Games LLC {{(new Date(Date.now())).getFullYear()}} All Rights Reserved
         </div>
     </footer>
