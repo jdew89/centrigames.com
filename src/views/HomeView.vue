@@ -12,9 +12,9 @@
             <img src="../assets/RuthlessMerchants_Header_1024x576_2_1.png" alt="Ruthless Merchants Image and Logo" class="aspect-auto w-max h-auto mx-auto">
              -->
             <source srcset="../assets/RuthlessMerchants_Header_1024x576_2_1.png" media="(min-width: 640px)">
-            <img src="../assets/Instagram_5x5_art_name.jpg" alt="Ruthless Merchants Image and Logo" class="aspect-auto w-max h-auto mx-auto">
+            <img src="../assets/Instagram_5x5_art_name.jpg" alt="Ruthless Merchants - The rowdy marketplace full of ruthless encounters" class="aspect-auto w-max h-auto mx-auto">
           </picture>
-          <div class=" text-lg text-primary-dark  absolute z-10 bottom-3 left-1/2 -translate-x-1/2 text-center w-full sm:hidden">
+          <div class=" text-lg text-primary-dark  absolute z-10 bottom-2 left-1/2 -translate-x-1/2 text-center w-full sm:hidden">
             <h3>The rowdy marketplace full of ruthless encounters</h3>
             <h3>3-6 Players <span class=" font-sans">|</span> 60 Minutes</h3>
           </div>
