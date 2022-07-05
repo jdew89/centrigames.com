@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <footer class=" bg-primary text-brand-white font-sans bg-primary-dark p-2 px-4 mt-2">
+    <footer class=" text-brand-white font-sans bg-primary-darker p-2 px-4 mt-2">
         <div class="container mx-auto">
-            <div class="grid grid-flow-row md:grid-flow-col gap-6 lg:grid-cols-3 lg:w-10/12 xl:w-8/12 lg:mx-auto">
+            <div class="grid grid-flow-row md:grid-flow-col gap-6 lg:grid-cols-3 lg:w-11/12 lg:mx-auto">
                 <div class=" text-left box-border mt-2 py-2">
                     <label for="emailsubscribe" class="text-lg font-bold">Subscribe to our newsletter</label>
                     <div class="relative">
