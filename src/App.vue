@@ -8,15 +8,11 @@ import FooterSection from '@/components/FooterSection.vue'
 
 <template>
   <nav-bar></nav-bar>
-  <header>
-  </header>
 
   <RouterView />
   <footer-section></footer-section>
 </template>
 
 <style>
-
-
 
 </style>
