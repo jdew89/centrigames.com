@@ -14,6 +14,6 @@ const props = defineProps({
 
 <style scoped>
 .side-panel {
-    @apply flex flex-col h-auto fixed z-10 top-11 right-0 bg-primary overflow-x-hidden duration-200 ease-in ;
+    @apply flex flex-col h-auto fixed z-10 top-11 right-0 bg-primary-dark overflow-x-hidden duration-200 ease-in ;
 }
 </style>
