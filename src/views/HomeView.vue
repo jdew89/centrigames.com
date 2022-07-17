@@ -29,7 +29,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis eius quis in nobis ipsa eveniet delectus nisi enim, adipisci quia doloribus veritatis maiores, fugiat sapiente deserunt totam? Eum, itaque!</p>
       </div>
     </section>
+    <!-- End old section -->
 
+    <!-- New Header Section -->
     <section class=" bg-primary-dark">
       <div class="flex md:flex-row flex-col items-center justify-center">
         <div class=" basis-1/2">
@@ -39,14 +41,39 @@
           <div class=" text-2xl lg:text-4xl">
             <h1 class="sr-only">Ruthless Merchants</h1>
             <h1 class="title">The rowdy marketplace full of ruthless encounters</h1>
-            <h1 class="subtitle">A ferociously fun spin on the pick up and delivery genre.</h1>
+            <h1 class="subtitle hidden">A ferociously fun spin on the pick up and delivery genre.</h1> <!-- hidden -->
             <h1 class="subtitle mb-4">3-6 Players <span class="font-sans">|</span> 60 Minutes</h1>
             <a href="/" class=" border-2 border-brand-white hover:bg-primary bg-primary-dark text-brand-white rounded-md p-2 tracking-wider ">Follow us on Kickstarter</a>
           </div>
         </div>
       </div>
     </section>
-          <p>A ferociously fun spin on the pick up and deliver genre. Easy to learn and quick to play, you will enjoy bluffing your friends and family while attempting to deliver your hard earned goods. Good luck trying to dodge their punches and thrown rocks! If you don't mind a little bit of conflict at your table, you should check this game out!</p>
+    <section>
+      <div class="container p-2 my-2 text-lg">
+        <p class=" font-sans mb-2 text-lg">
+          Ruthless Merchants is a marketplace full of cunning and unruly characters. The goal of the game is simple: collect coins. But, why is it a “ruthless” marketplace, you ask? Many actions have devious intentions.
+        </p>
+        <p class=" font-sans">
+          In this tabletop game, you will choose one of the six ruthless characters to compete against your fellow merchants. Collect your coins peacefully or come out with punches blazing! But, watch out for other merchants--they can knock the coins right out of your pockets.
+        </p>
+      </div>
+    </section>
+    <section class="container p-2 bg-primary-dark text-brand-white">
+      <div class="">
+        <blockquote class="text-lg tracking-widest big-quote relative p-4 pt-8">
+          A ferociously fun spin on the pick up and deliver genre. Easy to learn and quick to play, 
+          you will enjoy bluffing your friends and family while attempting to deliver your hard earned goods. 
+          Good luck trying to dodge their punches and thrown rocks! 
+          If you don't mind a little bit of conflict at your table, you should check this game out!
+          <cite class=" before:content-['-'] block text-gray-300 text-base">
+            Ben Strouse (ArtemisX on BGG)
+          </cite>
+        </blockquote>
+        <p class=" "></p>
+
+      </div>
+    </section>
+        
   </main>
 </template>
 
@@ -70,6 +97,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+}
+
+.big-quote {
+  @apply before:content-['\201C'] before:block before:text-8xl before:absolute before:-left-3 before:-top-2 before:text-primary;
 }
 
 
