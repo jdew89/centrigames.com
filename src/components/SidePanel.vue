@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
     <div class="side-panel">
-        <nav-item v-for="item in navItems" :text="item.text" :route="item.route"></nav-item>
+        <nav-item v-for="item in navItems" v-bind:key="item" :text="item.text" :route="item.route"></nav-item>
     </div>
 </template>
 
