@@ -3,6 +3,14 @@ module.exports = {
   mode: 'jit',
   content: ["./index.html","./src/**/*.{html,js,vue}"],
   theme: {
+    container: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px'
+      },
+    },
     extend: {
       colors: {
         'primary-light': '#28c8f0',
@@ -14,7 +22,7 @@ module.exports = {
       },
       fontFamily: {
         'excalibur': ['Excalibur Nouveau Med', 'sans-serif']
-      }
+      },
     },
   },
   plugins: [],
