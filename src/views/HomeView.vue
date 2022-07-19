@@ -32,7 +32,7 @@
     <!-- End old section -->
 
     <!-- New Header Section -->
-    <section class=" bg-primary-dark pt-11 mb-4">
+    <section class=" bg-primary-dark mb-4">
       <div class="flex md:flex-row flex-col items-center justify-center">
         <div class=" basis-1/2">
           <img src="../assets/Instagram_5x5_art_name.jpg" alt="Ruthless Merchants - The rowdy marketplace full of ruthless encounters" class="aspect-auto w-max h-auto mx-auto">

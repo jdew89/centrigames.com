@@ -9,10 +9,28 @@ import FooterSection from '@/components/FooterSection.vue'
 <template>
   <nav-bar></nav-bar>
 
-  <RouterView />
-  <footer-section></footer-section>
+  <div class="view pt-11">
+    <RouterView />
+  </div>
+  <footer-section class=" flex-shrink-0 mt-auto"></footer-section>
 </template>
 
 <style>
+ body, html {
+  height: 100%;
+ }
 
+ body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ }
+
+ footer {
+  margin-top: auto;
+ }
+
+ .view {
+  flex: 1;
+ }
 </style>
