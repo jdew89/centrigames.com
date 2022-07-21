@@ -12,25 +12,21 @@ import FooterSection from '@/components/FooterSection.vue'
   <div class="view pt-11">
     <RouterView />
   </div>
-  <footer-section class=" flex-shrink-0 mt-auto"></footer-section>
+  <footer-section class=""></footer-section>
 </template>
 
 <style>
  body, html {
-  height: 100%;
+  height: 100vh;
  }
 
  body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
  }
 
- footer {
-  margin-top: auto;
+/* pushes footer to bottom */
+ .view {
+  min-height: calc(100vh - 202px);
  }
 
- .view {
-  flex: 1;
- }
 </style>
