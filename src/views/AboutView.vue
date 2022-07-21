@@ -11,15 +11,18 @@
     </div>
   </section>
   <section class=" container mx-auto font-sans">
-    <h2 class=" text-center font-excalibur text-5xl tracking-wider">
+    <h2 class=" text-center font-excalibur text-5xl tracking-wider my-4">
       About Us
     </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius rerum, facere ad nobis quos officiis dolores animi? Excepturi ducimus voluptas eaque asperiores minus nisi, consectetur nemo, quisquam error maiores autem?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat expedita sit reiciendis officiis qui repudiandae eius exercitationem quod, autem eos illum odit quis saepe assumenda aliquam porro ducimus voluptatem commodi! 
-    </p>
+    <div class=" px-3 mb-4">
+      <p>
+        Cnetri Games is a board game designer based in Canton, Ohio.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat expedita sit reiciendis officiis qui repudiandae eius exercitationem quod, autem eos illum odit quis saepe assumenda aliquam porro ducimus voluptatem commodi! 
+      </p>
+
+    </div>
   </section>
 </template>
 
