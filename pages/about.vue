@@ -16,7 +16,7 @@
     </h2>
     <div class=" px-3 mb-4">
       <p>
-        Cnetri Games is a board game designer based in Canton, Ohio.
+        Centri Games is a board game designer based in Canton, Ohio.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat expedita sit reiciendis officiis qui repudiandae eius exercitationem quod, autem eos illum odit quis saepe assumenda aliquam porro ducimus voluptatem commodi! 

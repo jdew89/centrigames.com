@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
-  content: ["./index.html","./src/**/*.{html,js,vue}"],
+  content: [
+    "./app.vue",
+    "./components/**/*.{html,js,vue}",
+    "./pages/**/*.{html,js,vue}"
+  ],
   theme: {
     container: {
       screens: {
