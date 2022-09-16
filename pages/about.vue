@@ -11,21 +11,22 @@
     </div>
   </section>
   <section class=" container mx-auto font-sans">
-    <h2 class=" text-center font-excalibur text-5xl tracking-wider my-4">
+    <h2 class=" text-center font-excalibur text-5xl tracking-wider my-6">
       About Us
     </h2>
     <div class=" px-3 mb-4">
-      <p>
-        Centri Games is a board game designer based in Canton, Ohio.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat expedita sit reiciendis officiis qui repudiandae eius exercitationem quod, autem eos illum odit quis saepe assumenda aliquam porro ducimus voluptatem commodi! 
-      </p>
-
+      <ContentDoc path="/about" />
     </div>
   </section>
 </template>
 
-<style>
+<style scoped>
+  h2 {
+    @apply text-center font-excalibur text-5xl tracking-wider my-4;
+  }
+
+  p {
+    
+  }
 
 </style>
