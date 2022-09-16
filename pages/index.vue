@@ -60,15 +60,17 @@
     </section>
     <section class="bg-primary-dark mb-4 px-4 pt-10 pb-14 md:pb-10 font-sans text-brand-white">
       <div class="container mx-auto ">
-        <div class=" text-center md:flex md:justify-center md:items-center md:pr-8 lg:pr-10 xl:pr-20">
-          <label for="emailsubscribe" class="text-2xl font-bold md:w-1/3">Subscribe to our newsletter</label>
-          <div class="relative pt-2 md:w-2/3">
-              <input id="emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none">
-              <div class="absolute top-3 right-1">
-                  <button @submit.prevent="" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
-              </div>
+        <form name="index-email-sub" netlify>
+          <div class=" text-center md:flex md:justify-center md:items-center md:pr-8 lg:pr-10 xl:pr-20">
+            <label for="emailsubscribe" class="text-2xl font-bold md:w-1/3">Subscribe to our newsletter</label>
+            <div class="relative pt-2 md:w-2/3">
+                <input id="emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none">
+                <div class="absolute top-3 right-1">
+                    <button @submit.prevent="" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
+                </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <section class=" p-2">
