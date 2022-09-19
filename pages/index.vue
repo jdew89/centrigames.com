@@ -21,15 +21,15 @@
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: this.encode({
+        body: encode({
           "form-name": "subscribe",
-          ...this.subscribeForm
+          ...subscribeForm
         }),
       })
       .then(() => alert("Success!"))
       .catch((err) => alert("Error: %s", err))
       .finally(() => {
-        console.log("formData: %s", JSON.stringify(this.formData))
+        console.log("formData: %s", JSON.stringify(subscribeForm))
       })
   }
 </script>
