@@ -13,6 +13,14 @@
     emailsubscribe: ""
   })
 
+  function encode (data) {
+    return Object.keys(data)
+      .map(
+        key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      )
+      .join("&");
+  }
+
   function submitForm(){
       // Must post to a path not handled by the SSR.
       // Path must exist
