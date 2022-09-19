@@ -40,8 +40,8 @@
     </section>
     <section class="bg-primary-dark mb-4 px-4 pt-10 pb-14 md:pb-10 font-sans text-brand-white">
       <div class="container mx-auto ">
-        <form name="index-email-sub" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="index-email-sub" />
+        <form name="subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="subscribe" />
           <div class=" text-center md:flex md:justify-center md:items-center md:pr-8 lg:pr-10 xl:pr-20">
             <label for="emailsubscribe" class="text-2xl font-bold md:w-1/3">Subscribe to our newsletter</label>
             <div class="relative pt-2 md:w-2/3">
