@@ -8,6 +8,30 @@
   function toggleModal() {
     showModal.show = !showModal.show;
   }
+
+  const subscribeForm = reactive({
+    emailsubscribe: ""
+  })
+
+  function submitForm(){
+      // Must post to a path not handled by the SSR.
+      // Path must exist
+      fetch('/subscribeform', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: this.encode({
+          "form-name": "subscribe",
+          ...this.subscribeForm
+        }),
+      })
+      .then(() => alert("Success!"))
+      .catch((err) => alert("Error: %s", err))
+      .finally(() => {
+        console.log("formData: %s", JSON.stringify(this.formData))
+      })
+  }
 </script>
 
 <template>
@@ -40,12 +64,12 @@
     </section>
     <section class="bg-primary-dark mb-4 px-4 pt-10 pb-14 md:pb-10 font-sans text-brand-white">
       <div class="container mx-auto ">
-        <form name="subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="subscribe" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="submitForm()">
           <input type="hidden" name="form-name" value="subscribe" />
           <div class=" text-center md:flex md:justify-center md:items-center md:pr-8 lg:pr-10 xl:pr-20">
             <label for="emailsubscribe" class="text-2xl font-bold md:w-1/3">Subscribe to our newsletter</label>
             <div class="relative pt-2 md:w-2/3">
-                <input id="emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none">
+                <input id="emailsubscribe" v-model="subscribeForm.emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none" required>
                 <div class="absolute top-3 right-1">
                     <button class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
                 </div>
