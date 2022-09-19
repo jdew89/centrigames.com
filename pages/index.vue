@@ -1,4 +1,13 @@
 <script setup>
+  import {reactive, ref} from 'vue';
+
+  const showModal= reactive({
+      show: false
+  })
+
+  function toggleModal() {
+    showModal.show = !showModal.show;
+  }
 </script>
 
 <template>
@@ -31,17 +40,19 @@
     </section>
     <section class="bg-primary-dark mb-4 px-4 pt-10 pb-14 md:pb-10 font-sans text-brand-white">
       <div class="container mx-auto ">
-        <form name="index-email-sub" netlify>
+        <form name="index-email-sub" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="index-email-sub" />
           <div class=" text-center md:flex md:justify-center md:items-center md:pr-8 lg:pr-10 xl:pr-20">
             <label for="emailsubscribe" class="text-2xl font-bold md:w-1/3">Subscribe to our newsletter</label>
             <div class="relative pt-2 md:w-2/3">
                 <input id="emailsubscribe" name="emailsubscribe" type="email" placeholder="email@example.com" class="text-black w-full h-10 pl-2 pr-20 rounded-lg focus:shadow focus:outline-none">
                 <div class="absolute top-3 right-1">
-                    <button @submit.prevent="" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
+                    <button class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark" type="submit">Subscribe</button>
                 </div>
             </div>
           </div>
         </form>
+        <button @click="toggleModal" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark">Subscribe</button>
       </div>
     </section>
     <section class=" p-2">
@@ -59,6 +70,51 @@
 
       </div>
     </section>
+
+    <!-- MODAL -->
+    <div  class=" relative z-10 " aria-labelledby="modal-title" role="dialog" aria-modal="true" v-show="showModal.show">
+      <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+      <div @click="toggleModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <!--
+            Modal panel, show/hide based on modal state.
+
+            Entering: "ease-out duration-300"
+              From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              To: "opacity-100 translate-y-0 sm:scale-100"
+            Leaving: "ease-in duration-200"
+              From: "opacity-100 translate-y-0 sm:scale-100"
+              To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          -->
+          <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+            <div class="bg-white px-4 pt-4 pb-4 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <h3 class="leading-10 text-3xl text-gray-900" id="modal-title">Subscribe</h3>
+                  <div class="mt-2">
+                    <p class=" text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+              <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base text-white shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Subscribe</button>
+              <button @click="toggleModal" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
         
   </main>
 </template>
