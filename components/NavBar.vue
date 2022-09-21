@@ -27,10 +27,10 @@ function ToggleMenu() {
 </script>
 
 <template>
-    <nav class=" bg-primary-dark text-brand-white text-xl h-11 w-screen px-2 fixed z-50">
+    <nav class=" bg-primary-dark text-brand-white text-xl h-11 w-screen px-2 fixed z-10">
         <div class="lg:container flex flex-row lg:mx-auto">
             <a class=" text-2xl mr-4 h-11 flex flex-row justify-center items-center" href="/">
-                <img src="../assets/CentriGames_Final Logo_White-01.png" alt="Centri Games Logo" class="h-11">
+                <img src="~/assets/CentriGames_FinalLogo_White-01.png" alt="Centri Games Logo" class="h-11">
                 <span class="pl-2">CENTRI GAMES</span>
             </a>
 

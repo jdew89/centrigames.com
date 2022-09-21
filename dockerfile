@@ -1,5 +1,6 @@
-FROM node:18
+FROM node:lts
 
-EXPOSE 3000
+WORKDIR /app
 
-WORKDIR /app/
+RUN npm i nuxi -g
+
