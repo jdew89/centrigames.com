@@ -12,7 +12,7 @@ import NavBar from '@/components/NavBar.vue';
     <div class="container mx-auto">
       <div class="error-view sm:flex sm:flex-row ">
         <div class="flex  items-center justify-center">
-          <img src="../assets/HyattKlepo.png" alt="Ruthless Merchants - The rowdy marketplace full of ruthless encounters" class=" w-96 h-96">
+          <img src="assets/HyattKlepo.png" alt="Ruthless Merchants - The rowdy marketplace full of ruthless encounters" class=" w-96 h-96">
         </div>
         <div class="flex items-center justify-center flex-col mt-10">
           <h1 class=" text-6xl sm:text-8xl mb-6"> 404</h1>
