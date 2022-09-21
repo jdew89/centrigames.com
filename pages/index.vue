@@ -34,10 +34,12 @@
           ...subscribeForm
         }),
       })
-      .then(() => alert("Success!"))
+      .then(() => {
+        toggleModal();
+       })
       .catch((err) => alert("Error: %s", err))
       .finally(() => {
-        console.log("formData: %s", JSON.stringify(subscribeForm))
+        //console.log("formData: %s", JSON.stringify(subscribeForm))
       })
   }
 </script>
@@ -84,7 +86,6 @@
             </div>
           </div>
         </form>
-        <button @click="toggleModal" class="h-8 w-20 text-white font-bold rounded-lg bg-primary hover:bg-primary-dark">Subscribe</button>
       </div>
     </section>
     <section class=" p-2">
@@ -115,8 +116,8 @@
       From: "opacity-100"
       To: "opacity-0"
   -->
-      <div @click="toggleModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-      <div class="fixed inset-0 z-10 overflow-y-auto">
+      <div @click="toggleModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity z-20"></div>
+      <div class="fixed inset-0 z-20 overflow-y-auto pointer-events-none">
         <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           <!--
             Modal panel, show/hide based on modal state.
@@ -128,19 +129,18 @@
               From: "opacity-100 translate-y-0 sm:scale-100"
               To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           -->
-          <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg pointer-events-auto">
             <div class="bg-white px-4 pt-4 pb-4 sm:p-6 sm:pb-4">
               <div class="sm:flex sm:items-start">
                 <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                  <h3 class="leading-10 text-3xl text-gray-900" id="modal-title">Subscribe</h3>
+                  <h3 class="leading-10 text-3xl text-gray-900" id="modal-title">Subscribed</h3>
                   <div class="mt-2">
-                    <p class=" text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
+                    <p class=" text-gray-500">You have successfully subscribed!</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-              <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base text-white shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Subscribe</button>
               <button @click="toggleModal" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Close</button>
             </div>
           </div>
