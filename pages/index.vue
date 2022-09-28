@@ -1,6 +1,10 @@
 <script setup>
   import {reactive, ref} from 'vue';
 
+  useHead({
+    title: 'Home'
+  })
+
   const showModal= reactive({
       show: false
   })

@@ -2,6 +2,12 @@
 import FooterSection from '@/components/FooterSection.vue';
 import NavBar from '@/components/NavBar.vue';
 
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Centri Games` : 'Centri Games';
+  }
+})
+
 
 </script>
 

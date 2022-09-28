@@ -1,3 +1,9 @@
+<script setup>
+  useHead({
+    title: 'About'
+  })
+</script>
+
 <template>
   <section class=" bg-primary-dark mb-8">
     <div class="flex md:flex-row flex-col items-center justify-center">
