@@ -64,12 +64,13 @@
     </section>
     <section class="mb-4">
       <div class="container p-2 my-2 text-lg mx-auto">
-        <p class=" font-sans mb-2 text-lg">
+        <ContentDoc path="/home"/>
+        <!-- <p class=" font-sans mb-2 text-lg">
           Ruthless Merchants is a marketplace full of cunning and unruly characters. The goal of the game is simple: collect coins. But, why is it a “ruthless” marketplace, you ask? Many actions have devious intentions.
         </p>
         <p class=" font-sans">
           In this tabletop game, you will choose one of the six ruthless characters to compete against your fellow merchants. Collect your coins peacefully or come out with punches blazing! But, watch out for other merchants--they can knock the coins right out of your pockets.
-        </p>
+        </p> -->
       </div>
     </section>
     <section class="bg-primary-dark mb-4 px-4 pt-10 pb-14 md:pb-10 font-sans text-brand-white">
@@ -151,7 +152,7 @@
   </main>
 </template>
 
-<style scoped>
+<style>
 .title {
   @apply text-2xl lg:text-4xl tracking-wider;
 }
@@ -162,6 +163,10 @@
 
 .big-quote {
   @apply before:content-['\201C'] before:block before:text-8xl before:absolute before:-left-3 before:-top-1 before:text-primary-dark;
+}
+
+p {
+  @apply font-sans mb-4
 }
 
 

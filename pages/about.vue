@@ -1,5 +1,5 @@
 <template>
-  <section class=" bg-primary-dark mb-4">
+  <section class=" bg-primary-dark mb-8">
     <div class="flex md:flex-row flex-col items-center justify-center">
       <div class=" ">
         <picture>
@@ -11,22 +11,22 @@
     </div>
   </section>
   <section class=" container mx-auto font-sans">
-    <h2 class=" text-center font-excalibur text-5xl tracking-wider my-6">
+    <h2 class=" text-center font-excalibur text-5xl tracking-wider mb-8">
       About Us
     </h2>
     <div class=" px-3 mb-4">
-      <ContentDoc path="/about" />
+      <div class="sm:flex">
+        <img src="../assets/JeffandKaylee.jpg" alt="Hero image of Meeples on a playing board. -Christopher Paul" class=" flex-1 aspect-auto w-96 h-auto mx-auto mb-8 sm:mr-8">
+        <ContentDoc path="/about" class="content-styles" />
+      </div>
     </div>
   </section>
 </template>
 
-<style scoped>
-  h2 {
-    @apply text-center font-excalibur text-5xl tracking-wider my-4;
-  }
+<style>
 
-  p {
-    
-  }
+p {
+  @apply mb-3
+}
 
 </style>
