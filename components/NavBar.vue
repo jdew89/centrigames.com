@@ -38,7 +38,7 @@ function ToggleMenu() {
     
             <div class=" ml-auto my-auto md:hidden">
                 <burger-menu class="" @toggled="ToggleMenu" ></burger-menu>
-                <side-panel :class="openMenuCSSClasses" :nav-items="navItems" ></side-panel>
+                <side-panel :class="openMenuCSSClasses" :nav-items="navItems" @toggled="ToggleMenu"></side-panel>
             </div>
 
         </div>

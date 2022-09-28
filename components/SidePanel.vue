@@ -4,11 +4,17 @@ import NavItem from "./NavItem.vue"
 const props = defineProps({
     navItems: Array
 })
+
+const emit = defineEmits(['toggled'])
+
+function Toggled() {
+    emit('toggled');
+}
 </script>
 
 <template>
     <div class="side-panel">
-        <nav-item v-for="item in navItems" v-bind:key="item" :text="item.text" :route="item.route"></nav-item>
+        <nav-item v-for="item in navItems" v-bind:key="item" :text="item.text" :route="item.route" @click="Toggled"></nav-item>
     </div>
 </template>
 
