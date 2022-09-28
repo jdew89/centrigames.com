@@ -119,7 +119,7 @@
   -->
       <div @click="toggleModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity z-20"></div>
       <div class="fixed inset-0 z-20 overflow-y-auto pointer-events-none">
-        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div class="flex min-h-full justify-center p-4 text-center items-center sm:p-0">
           <!--
             Modal panel, show/hide based on modal state.
 
