@@ -2,22 +2,22 @@
 import {ref} from 'vue';
 
 const emit = defineEmits(['toggled'])
-const menuActive = ref(false);
+
+const props = defineProps(['open'])
 
 function ToggleMenu() {
-    menuActive.value = !menuActive.value;
-    
     emit('toggled');
 }
+
 
 
 </script>
 
 <template>
     <div class=" my-auto mx-2" @click="ToggleMenu">
-        <div class="bar" :class="{'bar1-active':menuActive}"></div>
-        <div class="bar" :class="{'bar2-active':menuActive}"></div>
-        <div class="bar" :class="{'bar3-active':menuActive}"></div>
+        <div class="bar" :class="{'bar1-active':open}"></div>
+        <div class="bar" :class="{'bar2-active':open}"></div>
+        <div class="bar" :class="{'bar3-active':open}"></div>
     </div>
 </template>
 

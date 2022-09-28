@@ -24,6 +24,7 @@ function ToggleMenu() {
     menuActive.value = !menuActive.value;
 }
 
+
 </script>
 
 <template>
@@ -37,7 +38,7 @@ function ToggleMenu() {
             <nav-item v-for="item in navItems" :key="item" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
     
             <div class=" ml-auto my-auto md:hidden">
-                <burger-menu class="" @toggled="ToggleMenu" ></burger-menu>
+                <burger-menu class="" @toggled="ToggleMenu" :open="menuActive"></burger-menu>
                 <side-panel :class="openMenuCSSClasses" :nav-items="navItems" @toggled="ToggleMenu"></side-panel>
             </div>
 

@@ -9,6 +9,7 @@ const emit = defineEmits(['toggled'])
 
 function Toggled() {
     emit('toggled');
+    
 }
 </script>
 
