@@ -61,7 +61,7 @@
             <h1 class="title">The rowdy marketplace full of ruthless encounters</h1>
             <h1 class="subtitle hidden">A ferociously fun spin on the pick up and delivery genre.</h1> <!-- hidden -->
             <h1 class="subtitle mb-4">3-6 Players <span class="font-sans">|</span> 60 Minutes</h1>
-            <a href="/" class=" border-2 border-brand-white hover:bg-primary bg-primary-dark text-brand-white rounded-md p-2 tracking-wider ">Follow us on Kickstarter</a>
+            <a href="https://www.kickstarter.com/projects/centrigames/ruthless-merchants" class=" border-2 border-brand-white hover:bg-primary bg-primary-dark text-brand-white rounded-md p-2 tracking-wider" target="_blank">Follow us on Kickstarter</a>
           </div>
         </div>
       </div>

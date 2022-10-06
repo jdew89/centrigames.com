@@ -11,7 +11,8 @@ const navItems = ref([{
 },{
     text: "About",
     route: "/about"
-}]);
+}
+]);
 
 const menuActive = ref(false);
 const openMenuCSSClasses = reactive({
@@ -36,6 +37,7 @@ function ToggleMenu() {
             </a>
 
             <nav-item v-for="item in navItems" :key="item" :text="item.text" :route="item.route" class=" hidden md:block"></nav-item>
+            <a href="https://www.kickstarter.com/projects/centrigames/ruthless-merchants" class=" hover:bg-secondary p-2 tracking-wider hidden md:block" target="_blank">Kickstarter</a>
     
             <div class=" ml-auto my-auto md:hidden">
                 <burger-menu class="" @toggled="ToggleMenu" :open="menuActive"></burger-menu>
